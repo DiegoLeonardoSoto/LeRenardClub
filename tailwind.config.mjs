@@ -15,8 +15,8 @@ export default {
         dosis: ["Dosis", ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
-        photo1: 'url("src/assets/imgs/psd-ai-2019.jpg")',
-        photo2: 'url("src/assets/imgs/Artboard-10.png")',
+        photo1: 'url("/assets/imgs/psd-ai-2019.jpg")',
+        photo2: 'url("/assets/imgs/Artboard-10.png")',
       },
     },
   },
