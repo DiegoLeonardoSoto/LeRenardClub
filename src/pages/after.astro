@@ -3,7 +3,9 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Curso de After Effect | Le Renard Club">
-  <div class="w-[100dvw] h-[800px] flex justify-center items-center bg-photo2">
+  <div
+    class="w-[100dvw] md:h-[800px] h-screen flex justify-center items-center bg-photo2"
+  >
     <div class="absolute z-10 w-2/3 pr-12">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-16" viewBox="0 0 512 512"
         ><path
@@ -14,21 +16,23 @@ import Layout from "../layouts/Layout.astro";
       <h1 class="uppercase font-dosis text-9xl font-bold text-white w-2/3">
         AFTER EFFECT FOR MOTION
       </h1>
-      <p class="text-white text-xs w-1/2">
+      <p class="text-white md:text-xs text-lg md:w-1/2">
         Nos introduciremos, veremos interfaz y cómo trabajar de manera fluida,
         ingresa a diferentes ramas como el motion, la composición, el uso
         tipográfico, formas.
       </p>
     </div>
   </div>
-  <section class="w-2/3 mx-auto my-20">
-    <div class="grid grid-cols-3 gap-32">
+  <section class="md:w-2/3 w-3/4 mx-auto my-20">
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-32">
       <div>
-        <h3 class="font-dosis text-xl font-medium text-cyan-500 mb-8">
+        <h3
+          class="font-dosis md:text-xl text-3xl font-medium text-cyan-500 mb-8"
+        >
           <span class="block text-black">APRENDÉ</span> AFTER EFFECT PARA MOTION
         </h3>
 
-        <p class="text-sm italic font-light flex flex-col gap-8">
+        <p class="md:text-sm text-lg italic font-light flex flex-col gap-8">
           <span>
             Estas herramientas son un standart, tanto para editar, como para
             post-producir material.
@@ -53,11 +57,11 @@ import Layout from "../layouts/Layout.astro";
       </div>
 
       <div class="flex flex-col gap-6">
-        <h3 class="text-2xl font-bold text-yellow-green font-dosis">
+        <h3 class="md:text-2xl text-4xl font-bold text-yellow-green font-dosis">
           DÍA Y HORARIO
         </h3>
 
-        <p class="text-sm italic font-light flex flex-col">
+        <p class="md:text-sm text-lg italic font-light flex flex-col">
           <span>Agosto</span>
           <span class="font-bold">Sabados 16:00 Hs a 18:20hs</span>
           <span>Duración Inicial: 12 clases | 3 Meses</span>
@@ -68,16 +72,18 @@ import Layout from "../layouts/Layout.astro";
           Precio: <span class="text-red-500"> $0000 </span>
         </p>
 
-        <a href="/" class="text-sm underline">Version gratis</a>
+        <a href="/" class="md:text-sm text-lg underline">Version gratis</a>
       </div>
 
       <div>
-        <h3 class="text-2xl font-bold text-yellow-green font-dosis mb-6">
-          <span class="text-5xl block"> 2025 </span>
+        <h3
+          class="md:text-2xl text-4xl font-bold text-yellow-green font-dosis mb-6"
+        >
+          <span class="md:text-5xl text-7xl block"> 2025 </span>
           REQUISITOS
         </h3>
 
-        <p class="text-sm italic font-light flex flex-col">
+        <p class="md:text-sm text-lg italic font-light flex flex-col">
           <span>
             <span class="font-bold">Si venis con notebook: </span> Procesador I3,
             Memoria Ram 8gb
@@ -91,7 +97,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
 
     <button
-      class="bg-violet-700 flex gap-3 text-yellow-green font-dosis font-bold uppercase rounded-lg py-4 px-8 hover:bg-violet-900 duration-150 my-16"
+      class="text-xl md:text-base bg-violet-700 flex gap-3 text-yellow-green font-dosis font-bold uppercase rounded-lg py-4 px-8 hover:bg-violet-900 duration-150 my-16"
       >Descargar plan de estudio <svg
         xmlns="http://www.w3.org/2000/svg"
         class="w-7 stroke-current"
@@ -106,12 +112,16 @@ import Layout from "../layouts/Layout.astro";
       ></button
     >
 
-    <h3 class="text-2xl font-bold text-yellow-green mb-6">Trailer</h3>
+    <h3 class="md:text-2xl text-4xl font-bold text-yellow-green mb-6">
+      Trailer
+    </h3>
     <img class="w-full mb-36" src="/assets/imgs/image.png" alt="trailer" />
 
-    <div class="grid grid-cols-3 gap-32 mb-32">
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-32 mb-32">
       <div>
-        <h3 class="font-dosis text-xl font-medium text-cyan-500 mb-8">
+        <h3
+          class="font-dosis md:text-xl text-3xl font-medium text-cyan-500 mb-8"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-14 mb-5"
@@ -124,18 +134,20 @@ import Layout from "../layouts/Layout.astro";
           <span class="block text-black">APRENDÉ</span> AFTER EFFECT
         </h3>
 
-        <p class="text-sm italic font-light">
+        <p class="md:text-sm text-lg italic font-light">
           Nos introduciremos en en After Effect y su interfaz y cómo trabajar de
           manera fluida, se ingresa a diferentes ramas como el motion, la
           composición, el uso tipográfico y de formas
         </p>
       </div>
       <div>
-        <h3 class="text-2xl font-bold text-yellow-green font-dosis mb-6">
+        <h3
+          class="md:text-2xl text-4xl font-bold text-yellow-green font-dosis mb-6"
+        >
           DIRIGIDO A
         </h3>
 
-        <p class="text-sm italic font-light flex flex-col gap-2">
+        <p class="md:text-sm text-lg italic font-light flex flex-col gap-2">
           <span> Está orientado a 3 tipos de personas. </span>
           <span>
             A- Personas con interes en iniciarse en estas herramientas.
@@ -151,11 +163,13 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
       <div>
-        <h3 class="text-2xl font-bold text-yellow-green font-dosis mb-6">
+        <h3
+          class="md:text-2xl text-4xl font-bold text-yellow-green font-dosis mb-6"
+        >
           TEORÍA INICIAL & MOTION
         </h3>
 
-        <p class="text-sm italic font-light flex flex-col">
+        <p class="md:text-sm text-lg italic font-light flex flex-col">
           Aprendé a utilizar las herramientas iniciales para Animación de
           formas, transiciónes, utilización tipografícas, curvas de animación y
           más. <br /> Vamos a repasar los conceptos básicos de formatos y extensiones

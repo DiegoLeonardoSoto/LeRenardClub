@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Club">
   <div class="left-0 overflow-hidden w-full">
     <div
-      class="h-[40rem] w-[100dvw] overflow-hidden flex items-center justify-center relative"
+      class="md:h-[40rem] w-[100dvw] overflow-hidden flex items-center justify-center relative h-auto"
     >
       <video
         autoplay
@@ -14,7 +14,7 @@ import Layout from "../layouts/Layout.astro";
         src="/assets/videos/skate.mp4"
         class="object-contain overflow-clip w-screen aspect-video"></video>
 
-      <div class="absolute z-10 w-2/3">
+      <div class="absolute z-10 w-2/3 md:block flex flex-col gap-2">
         <svg
           class="fill-white w-20"
           id="Capa_1"
@@ -35,7 +35,7 @@ import Layout from "../layouts/Layout.astro";
           </g>
         </svg>
         <h1 class="uppercase font-dosis text-9xl font-bold text-white">Club</h1>
-        <p class="text-white text-xs w-1/2">
+        <p class="text-white md:text-xs text-base md:w-1/2 w-2/3">
           El Club de Le Renard es un espacio de exploración creativa y
           entendimiento técnico de softwares relacionados con el diseño, motion
           graphic, ilustración, e iluminado y modelado 3D.
@@ -43,13 +43,15 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
 
-    <div class="w-2/3 mx-auto my-40">
-      <div class="w-64 mb-28">
-        <h3 class="font-dosis font-medium text-xl">ESPÍRITU</h3>
-        <h4 class="font-dosis font-medium text-xl text-red-500 mb-8">
+    <div class="md:w-2/3 w-3/4 mx-auto my-40">
+      <div class="md:w-64 w-full mb-28">
+        <h3 class="font-dosis font-medium md:text-xl text-3xl">ESPÍRITU</h3>
+        <h4
+          class="font-dosis font-medium md:text-xl text-3xl text-red-500 mb-8"
+        >
           CREATIVO EN LA PATAGONIA
         </h4>
-        <p class="italic text-sm font-normal">
+        <p class="italic md:text-sm text-lg font-normal">
           Hola! este es el Club Secreto de Le Renard, un club de aprendizaje de
           herramientas vinculadas a la Comunicación visual, Motion y 3D. Donde
           charlamos de procesos, busquedas y conceptos.
@@ -63,24 +65,28 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
 
-      <div class="flex justify-between">
-        <div class="w-64">
-          <h4 class="text-5xl font-dosis font-bold mb-3 text-yellow-green">
+      <div class="flex md:flex-row flex-col justify-between">
+        <div class="md:w-64 w-full md:m-0 mb-10">
+          <h4
+            class="md:text-5xl text-7xl font-dosis font-bold mb-3 text-yellow-green"
+          >
             Enfoque
           </h4>
-          <p class="text-sm italic">
+          <p class="md:text-sm text-lg italic">
             Actualmente me enfoco en desarrollar piezas para motion y en pre
             producción para animación con un fuerte soporte en el diseño gráfico
             como base.
           </p>
         </div>
 
-        <div class="w-64">
-          <h4 class="text-5xl font-dosis font-bold mb-3 text-yellow-green">
+        <div class="md:w-64 w-full md:m-0 mb-10">
+          <h4
+            class="md:text-5xl text-6xl font-dosis font-bold mb-3 text-yellow-green"
+          >
             AREA DE INFLUENCIAS
           </h4>
 
-          <ul>
+          <ul class="md:text-sm text-lg">
             <li>Animación 2D</li>
             <li>Motion Graphics</li>
             <li>PreProducción Animación</li>
@@ -92,17 +98,19 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
 
-      <h4 class="text-2xl font-dosis font-bold text-yellow-green mb-12">
+      <h4
+        class="md:text-2xl text-4xl font-dosis font-bold text-yellow-green mb-12"
+      >
         DIRIGIDO A
       </h4>
-      <div class="flex justify-between gap-28">
+      <div class="flex md:flex-row flex-col justify-between md:gap-28 gap-10">
         <div>
           <h4
-            class="text-2xl font-dosis font-bold mb-3 text-yellow-green uppercase"
+            class="md:text-2xl text-4xl font-dosis font-bold mb-3 text-yellow-green uppercase"
           >
             Profesionales
           </h4>
-          <p class="text-sm italic">
+          <p class="md:text-sm text-lg italic">
             Si sos un profesional que quiere sumar una nueva herramienta de
             conocimiento o especializarse en algún área en particular esto es
             ideal.
@@ -111,12 +119,12 @@ import Layout from "../layouts/Layout.astro";
 
         <div>
           <h4
-            class="text-2xl font-dosis font-bold mb-3 text-yellow-green uppercase"
+            class="md:text-2xl text-4xl font-dosis font-bold mb-3 text-yellow-green uppercase"
           >
             alumnos pre-carreras
           </h4>
 
-          <p class="text-sm italic">
+          <p class="md:text-sm text-lg italic">
             Si estás por estudiar alguna carrera vinculada a estas áreas (ver
             áreas de influencia) te recomendamos acercarte y participar en algún
             curso y/o taller. Te dará una mayor visión y conocimiento sobre
@@ -126,12 +134,12 @@ import Layout from "../layouts/Layout.astro";
 
         <div>
           <h4
-            class="text-2xl font-dosis font-bold mb-3 text-yellow-green uppercase"
+            class="md:text-2xl text-4xl font-dosis font-bold mb-3 text-yellow-green uppercase"
           >
             QUIERO APRENDER UN OFICIO.
           </h4>
 
-          <p class="text-sm italic">
+          <p class="md:text-sm text-lg italic">
             Si querés vincularte y tener un oficio que te encante, date la
             oportunidad, no esperes mas, este es el momento.
           </p>
@@ -140,10 +148,12 @@ import Layout from "../layouts/Layout.astro";
 
       <div class="flex flex-col gap-7 mt-32">
         <img class="w-10" src="/assets/icons/startIcon.svg" alt="start icon" />
-        <h3 class="text-5xl font-bold text-red-500 font-dosis uppercase">
+        <h3
+          class="md:text-5xl text-7xl font-bold text-red-500 font-dosis uppercase"
+        >
           todos los talleres
         </h3>
-        <p class="text-sm italic font-light pr-52">
+        <p class="md:text-sm text-lg italic font-light pr-52">
           En Le Renard preparamos talleres cortos abordando distintas
           disciplinas digitales y analogícas para ofrecer conocimiento y
           herramientas relacionados con el desarrollo creativo y la creación de
@@ -153,16 +163,16 @@ import Layout from "../layouts/Layout.astro";
     </div>
 
     <div
-      class="h-[34rem] w-[100dvw] overflow-hidden flex items-center justify-center"
+      class="md:h-[44rem] h-screen w-[100dvw] overflow-hidden flex items-center justify-center relative"
     >
       <video
         autoplay
         preload="auto"
         loop
         src="/assets/videos/3Dshort.mp4"
-        class="object-contain overflow-clip w-screen aspect-video"></video>
+        class="absolute z-10 w-auto min-w-full min-h-full max-w-none"></video>
 
-      <div class="absolute z-10 w-2/3">
+      <div class="absolute z-10 md:w-2/3 w-full md:p-0 px-12">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-16" viewBox="0 0 24 24"
           ><path
             fill="#ffffff"
@@ -172,7 +182,7 @@ import Layout from "../layouts/Layout.astro";
         <h2 class="uppercase font-dosis text-9xl font-bold text-white">
           PROYECTO 3D
         </h2>
-        <p class="text-white text-xs w-1/2">
+        <p class="text-white md:text-xs text-base md:w-1/2">
           Aprende a elaborar un pequeño proyecto 3D, Texturiza, modela e ilumina
           una escena desde la teoría a a la practica en Blender 3D.
         </p>
@@ -195,9 +205,9 @@ import Layout from "../layouts/Layout.astro";
     </div>
 
     <div
-      class="w-[100dvw] h-[800px] flex justify-center items-center bg-photo2"
+      class="w-[100dvw] h-screen md:h-[44rem] flex justify-center items-center bg-photo2"
     >
-      <div class="absolute z-10 w-2/3 pr-12">
+      <div class="absolute z-10 md:w-2/3 w-full md:p-0 px-12 pr-12">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="w-16"
@@ -210,7 +220,7 @@ import Layout from "../layouts/Layout.astro";
         <h2 class="uppercase font-dosis text-9xl font-bold text-white w-2/3">
           AFTER EFFECT FOR MOTION
         </h2>
-        <p class="text-white text-xs w-1/2">
+        <p class="text-white md:text-xs text-base md:w-1/2">
           Nos introduciremos, veremos interfaz y cómo trabajar de manera fluida,
           ingresa a diferentes ramas como el motion, la composición, el uso
           tipográfico, formas.

@@ -2,9 +2,11 @@
 import DropdownMenu from "./DropdownMenu.astro";
 ---
 
-<nav class="bg-white border-gray-200 border-b-2 font-dosis">
+<nav
+  class="bg-white border-gray-200 border-b-2 font-dosis md:static fixed top-0 w-full z-50"
+>
   <div
-    class="flex flex-wrap items-center justify-between mx-auto p-4 container text-sm"
+    class="flex flex-wrap items-center justify-between sm:mx-auto sm:container p-4 md:text-sm text-xl w-full"
   >
     <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="/assets/logo.svg" class="w-12" alt="Le Renard Logo" />
@@ -34,7 +36,7 @@ import DropdownMenu from "./DropdownMenu.astro";
     </button>
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul
-        class="uppercase font-medium flex items-center flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+        class="uppercase font-medium flex items-center flex-col p-8 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 gap-4 md:gap-0"
       >
         <li>
           <DropdownMenu />
